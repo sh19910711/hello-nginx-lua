@@ -4,9 +4,9 @@ services:
   - docker
 
 install:
-  - docker build -t hello .
+  - docker-compose build
 
 script:
-  - docker run -p 8080:80 -d hello
+  - docker-compose up
   - sleep 3
   - curl http://localhost:8080/hello | grep Hello

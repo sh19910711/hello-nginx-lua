@@ -38,6 +38,7 @@ RUN make
 RUN make install
 
 COPY etc/nginx /etc/nginx
+COPY lib /lib/nginx-lua
 EXPOSE 80
 
 # test nginx.conf
