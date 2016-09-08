@@ -10,3 +10,6 @@ script:
   - docker-compose up
   - sleep 3
   - curl http://localhost:8080/hello | grep Hello
+  - curl http://localhost:8080/count | grep 1
+  - curl http://localhost:8080/count | grep 2
+  - curl http://localhost:8080/count | grep 3
