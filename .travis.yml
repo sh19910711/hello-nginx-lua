@@ -9,4 +9,4 @@ install:
 script:
   - docker run -p 8080:80 -d hello
   - sleep 3
-  - curl http://localhost:8080/hello | grep hello
+  - curl http://localhost:8080/hello
